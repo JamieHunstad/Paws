@@ -26,3 +26,7 @@
 .open{
     display: block;
 }
+
+.bg-light{
+    background-color: blue;
+}
