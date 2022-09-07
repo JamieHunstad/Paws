@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    /*
+    --brandColorPrimary: #ffdde0;
+    --brandColorSecondary: #9f686d;
+    --brandColorAccent: #384dff;
+    */
+    --brandColorPrimary: #beb5ff;
+    --brandColorSecondary: #171738;
+    --brandColorAccent: #2E1760;
+}
+.btn-primary{
+    background-color: var(--brandColorPrimary);
+    color: var(--brandColorSecondary);
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: none;
+    transition: .4s;
+}
+.btn-primary:hover{
+    background-color: var(--brandColorSecondary);
+    color: var(--brandColorPrimary);
+    border: none;
+}
+
+.open{
+    display: block;
+}

@@ -1,0 +1,77 @@
+#splash{
+    background-color: var(--brandColorPrimary);
+}
+#splash-container{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 100px;
+}
+#splash-container--left h1{
+   color: var(--brandColorAccent);
+}
+#splash-container--left p{
+   color: var(--brandColorSecondary);
+}
+#splash-container--right{
+    display: flex;
+    justify-content: center;
+}
+#splash-container--right img{
+    width: 300px;
+}
+
+
+#mainContent{
+    background-color: var(--brandColorSecondary);
+    padding: 50px 0px;
+}
+
+#mainContent-title a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+#mainContent-container{
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.mainContent-container--item{
+    margin: 0px 8%;
+    padding: 20px;
+    border: solid 1px var(--brandColorPrimary);
+    border-radius: 10px;
+}
+.mainContent-container--item h2{
+    font-weight: bold;
+    color: var(--brandColorPrimary);
+}
+.mainContent-container--item p{
+    color: var(--brandColorPrimary);
+}
+
+
+#productsSection{
+    margin-top: 50px;
+}
+
+.treatBox-img{
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    margin-bottom:5px;
+}
+
+.btn-primary{
+    background-color: var(--brandColorPrimary);
+    color: var(--brandColorSecondary);
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: none;
+    transition: .4s;
+}
+.btn-primary:hover{
+    background-color: var(--brandColorSecondary);
+    color: var(--brandColorPrimary);
+    border: none;
+}

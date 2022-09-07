@@ -1,0 +1,10 @@
+.treatItem{
+    border: solid 1px var(--brandColorPrimary);
+    margin: 0px 5px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+.treatImage{
+    margin-top: 10px;
+    border-radius: 10px;
+}

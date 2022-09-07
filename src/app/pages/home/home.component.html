@@ -1,0 +1,55 @@
+<section id="splash">
+    <div id="splash-container" class="container">
+        <div id="splash-container--left">
+            <h1>People aren't the only ones with a sweet tooth!</h1>
+            <p>Let us treat your pet to some of our gourmet treats using all natural ingredients.</p>
+        </div>
+        <div id="splash-container--right">
+            <img src="assets/splash.png">
+        </div>
+    </div>
+</section>
+<main>
+    <section id="mainContent">
+        <div class="container">
+            <div id="mainContent-title" class="d-flex justify-content-center">
+                <a routerLink="about"><h1>How it works!</h1></a>
+            </div>
+            <div id="mainContent-container">
+                <div id="mainContent-container--1" class="mainContent-container--item">
+                    <h2>1.</h2>
+                    <p>Choose from our selection of treats made with all-natural ingreients.</p>
+                </div>
+                <div id="mainContent-container--2" class="mainContent-container--item">
+                    <h2>2.</h2>
+                    <p>We'll send you a new care package each week of treats related to your choice.</p>
+                </div>
+                <div id="mainContent-container--3" class="mainContent-container--item">
+                    <h2>3.</h2>
+                    <p>Lots of tail wags.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="productsSection">
+        <div class="container">
+            <div class="row justify-content-center">
+                <h1 class="text-center mb-5">Our Products</h1>
+                <div class="col-lg-4" *ngFor="let td of treatData.slice(0, 2);">
+                    <div class="treatBox text-center">
+                        <div>
+                            <img class="treatBox-img" src={{td.treatImage}}>
+                            <h2>{{td.treatName}}</h2>
+                            <p>{{td.treatPrice}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="viewMore" class="mt-3">
+        <div class="container text-center">
+            <a routerLink="treats"><button type="button" class="btn btn-primary">View More</button></a>
+        </div>
+    </section>
+</main>
